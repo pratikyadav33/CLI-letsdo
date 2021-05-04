@@ -1,5 +1,5 @@
 /*
-Copyright © 2021 NAME HERE <EMAIL ADDRESS>
+Copyright © 2021 Pratik <PRATIKYADAV33@GMAIL.com>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -21,6 +21,7 @@ import (
 
 	"github.com/spf13/cobra"
 )
+
 func addTask(args []string) {
 	var tempTask string
 	for _, val := range args {
@@ -33,8 +34,6 @@ func addTask(args []string) {
 			panic(err)
 		}
 		defer db.Close()
-
-		//fmt.Println(tempTask)
 
 		insert, err := db.Query("INSERT INTO todo(task,done) VALUES('" + tempTask + "', 0);")
 		if err != nil {
@@ -51,7 +50,6 @@ func addTask(args []string) {
 
 }
 
-// addCmd represents the add command
 var addCmd = &cobra.Command{
 	Use:   "add",
 	Short: "Add Task",

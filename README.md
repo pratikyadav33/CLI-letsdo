@@ -14,10 +14,7 @@ letsdo is a cli, platform-independent todo manager
 
 
 
-> Add task directly from cli interface
-> Check for task status 
-> Mark task as done 
-> Update task 
+
 
 
 
@@ -31,7 +28,7 @@ letsdo uses :
 
 ## Installation
 
-Dillinger requires [Golang](https://golang.org/),[Cobra, and MySQL](https://github.com/spf13/cobra).
+letsdo requires [Golang](https://golang.org/),[Cobra, and MySQL](https://github.com/spf13/cobra).
 
 Install the GO and run.
 
